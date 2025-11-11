@@ -164,86 +164,45 @@ body {
     margin-left: 5px;
 }
 
-/* === MEGA MENU === */
-.mega-menu {
+/* === DROPDOWN MENU === */
+.dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
+    left: 0;
+    min-width: 250px;
     background-color: var(--white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
+    border-radius: 4px;
+    padding: 15px 0;
 }
 
-.has-dropdown:hover .mega-menu {
+.has-dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%);
 }
 
-.mega-menu-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 30px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 30px;
-    overflow: hidden;
-}
-
-.mega-menu-column {
-    min-width: 0;
-    max-width: 100%;
-}
-
-.mega-menu-column ul {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.mega-menu-column h4 {
-    color: var(--primary);
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.mega-menu-column ul {
+.dropdown-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.mega-menu-column ul li {
-    margin-bottom: 4px;
-}
-
-.mega-menu-column ul li a {
+.dropdown-menu ul li a {
     color: var(--gray-700);
     text-decoration: none;
-    font-size: 12px;
-    padding: 5px 8px;
+    font-size: 14px;
+    padding: 10px 20px;
     display: block;
-    border-radius: 4px;
     transition: all 0.2s;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-.mega-menu-column ul li a:hover {
+.dropdown-menu ul li a:hover {
     background-color: rgba(85, 81, 149, 0.08);
     color: var(--primary);
-    transform: translateX(5px);
 }
 
 /* === PAGE TITLE === */
