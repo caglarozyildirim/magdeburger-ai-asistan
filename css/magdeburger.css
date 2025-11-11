@@ -209,7 +209,8 @@ body {
 }
 
 .mega-menu-column {
-    /* Column wrapper */
+    display: flex;
+    flex-direction: column;
 }
 
 .mega-menu-category-group {
