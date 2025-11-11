@@ -166,10 +166,10 @@ body {
 
 /* === MEGA MENU === */
 .mega-menu {
-    position: fixed;
-    top: var(--header-height, 140px);
-    left: 0;
-    right: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100vw;
     background-color: var(--white);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -177,13 +177,12 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
-    transform: translateY(-10px);
 }
 
 .has-dropdown:hover .mega-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%);
 }
 
 .mega-menu-content {
