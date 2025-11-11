@@ -373,7 +373,7 @@ function showNotification(message, type = 'info') {
         border-radius: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         z-index: 10000;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik', sans-serif;
         font-size: 14px;
         animation: slideInRight 0.3s ease;
     `;
