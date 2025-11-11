@@ -186,17 +186,18 @@ body {
 }
 
 .mega-menu-content {
-    max-width: var(--container-width);
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
     overflow: hidden;
 }
 
 .mega-menu-column {
     min-width: 0;
+    max-width: 100%;
 }
 
 .mega-menu-column ul {
@@ -206,11 +207,14 @@ body {
 
 .mega-menu-column h4 {
     color: var(--primary);
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mega-menu-column ul {
@@ -220,17 +224,20 @@ body {
 }
 
 .mega-menu-column ul li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .mega-menu-column ul li a {
     color: var(--gray-700);
     text-decoration: none;
-    font-size: 14px;
-    padding: 8px 12px;
+    font-size: 12px;
+    padding: 5px 8px;
     display: block;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: all 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mega-menu-column ul li a:hover {
