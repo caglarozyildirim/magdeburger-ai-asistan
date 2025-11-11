@@ -204,12 +204,20 @@ body {
 
 .mega-menu-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.mega-menu-column {
+    /* Column wrapper */
 }
 
 .mega-menu-category-group {
-    /* Each category group */
+    margin-bottom: 25px;
+}
+
+.mega-menu-category-group:last-child {
+    margin-bottom: 0;
 }
 
 .mega-menu-category-title {
