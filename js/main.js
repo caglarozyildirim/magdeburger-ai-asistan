@@ -565,32 +565,6 @@ window.viewDocument = viewDocument;
 window.downloadDocument = downloadDocument;
 window.deleteDocument = deleteDocument;
 
-// Mega Menu İnteraktif Kategori Değiştirme
-document.addEventListener('DOMContentLoaded', function() {
-    const categories = document.querySelectorAll('.mega-menu-category');
-
-    categories.forEach(category => {
-        category.addEventListener('click', function() {
-            const categoryId = this.dataset.category;
-
-            // Tüm kategorilerin active class'ını kaldır
-            categories.forEach(cat => cat.classList.remove('active'));
-
-            // Bu kategoriyi active yap
-            this.classList.add('active');
-
-            // Tüm ürün listelerini gizle
-            document.querySelectorAll('.mega-menu-products-list').forEach(list => {
-                list.classList.remove('active');
-            });
-
-            // Seçilen kategorinin ürünlerini göster
-            const productList = document.querySelector(`[data-products="${categoryId}"]`);
-            if (productList) {
-                productList.classList.add('active');
-            }
-        });
-    });
-});
+// Mega Menu - Static grid layout (no JavaScript needed)
 
 console.log('✅ main.js yüklendi');
