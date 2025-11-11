@@ -4363,3 +4363,651 @@ body.cart-visible .main-footer {
     font-size: 12px;
 }
 
+/* ================================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   ================================================ */
+
+/* Large Tablets & Small Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header Navigation */
+    .main-nav ul {
+        gap: 15px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero-slide {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        min-height: 300px;
+    }
+
+    /* Product Grids */
+    .products-track,
+    .campaigns-track {
+        gap: 15px;
+    }
+
+    .product-card-large,
+    .campaign-card-large {
+        min-width: 280px;
+    }
+
+    /* Footer */
+    .footer-grid-large {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    /* Top Bar */
+    .top-bar {
+        display: none;
+    }
+
+    /* Header */
+    .main-header {
+        padding: 15px 0;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    /* Hide desktop navigation, show mobile menu */
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .main-nav.mobile-open {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mega-menu {
+        position: static;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .mega-menu-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .hero-image {
+        min-height: 250px;
+    }
+
+    /* Quick Access */
+    .quick-access-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .quick-access-card h3 {
+        font-size: 14px;
+    }
+
+    /* Products Section */
+    .products-slider,
+    .campaigns-slider {
+        margin: 0 -15px;
+        padding: 0 15px;
+    }
+
+    .slider-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .product-card-large,
+    .campaign-card-large {
+        min-width: 260px;
+    }
+
+    /* Blog Grid */
+    .blog-grid-large {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Contact Bar */
+    .contact-bar-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact-bar-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Footer */
+    .footer-grid-large {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* POC Pages */
+    .poc-hero h1 {
+        font-size: 28px;
+    }
+
+    .poc-hero p {
+        font-size: 15px;
+    }
+
+    .product-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sales Process */
+    .sales-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ai-assistant-panel {
+        max-height: 400px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+
+    .progress-steps {
+        gap: 5px;
+    }
+
+    .step-label {
+        font-size: 11px;
+    }
+
+    .step-circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .step-connector {
+        min-width: 20px;
+    }
+
+    /* Coverage Options */
+    .coverage-options {
+        flex-direction: column;
+    }
+
+    .coverage-card {
+        width: 100%;
+    }
+
+    /* Agent Cards */
+    .agent-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .agent-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agent-stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Cross Sell Products */
+    .cross-sell-products {
+        grid-template-columns: 1fr;
+    }
+
+    /* Payment Section */
+    .installment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Modals */
+    .modal-content-large,
+    .modal-content-medium {
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .modal-body-split {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .chat-panel,
+    .audit-panel {
+        max-height: 50vh;
+    }
+
+    /* Cart Summary Footer */
+    .cart-summary-footer {
+        padding: 12px 15px;
+    }
+
+    .cart-summary-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cart-summary-breakdown {
+        width: 100%;
+    }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    /* Typography */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Header */
+    .logo img {
+        height: 35px;
+    }
+
+    .header-actions .btn-primary-gradient {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    /* Quick Access */
+    .quick-access-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-access-card {
+        padding: 20px 15px;
+    }
+
+    /* Section Headers */
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    /* Products */
+    .product-card-large,
+    .campaign-card-large,
+    .blog-card-large {
+        min-width: 240px;
+    }
+
+    /* POC Badge */
+    .poc-badge {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    /* Product Cards */
+    .product-card-poc {
+        padding: 20px;
+    }
+
+    .product-card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .product-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .product-info h3 {
+        font-size: 18px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-action-primary,
+    .btn-action-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    /* Sales Form */
+    .step-header h2 {
+        font-size: 20px;
+    }
+
+    .step-header p {
+        font-size: 13px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+
+    /* Progress Indicator */
+    .progress-steps {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .step-item {
+        min-width: 60px;
+    }
+
+    .step-label {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    /* Agent Selection */
+    .agent-rating {
+        font-size: 12px;
+    }
+
+    /* Product Recommendations */
+    .product-recommendation {
+        padding: 15px;
+    }
+
+    .recommendation-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Order Summary */
+    .order-summary-box {
+        padding: 15px;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Payment Methods */
+    .payment-methods {
+        flex-direction: column;
+    }
+
+    .payment-method {
+        width: 100%;
+    }
+
+    .installment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Chat Interface */
+    .chat-messages {
+        max-height: 250px;
+    }
+
+    .chat-input-area input {
+        font-size: 14px;
+    }
+
+    .quick-questions {
+        flex-wrap: wrap;
+    }
+
+    .quick-question-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Modal Headers */
+    .modal-header-poc h2 {
+        font-size: 18px;
+    }
+
+    /* Documents List */
+    .document-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .doc-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Footer */
+    .footer-col {
+        padding: 20px 0;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-links li a {
+        font-size: 13px;
+    }
+
+    .social-links-footer a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    /* Cart */
+    .cart-summary-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cart-item-actions {
+        justify-content: center;
+    }
+}
+
+/* Very Small Screens (360px and below) */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .product-card-large,
+    .campaign-card-large,
+    .blog-card-large {
+        min-width: 220px;
+    }
+
+    .btn-primary-gradient,
+    .btn-action-primary {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .modal-content-large,
+    .modal-content-medium {
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .chat-messages {
+        max-height: 200px;
+    }
+
+    .ai-assistant-panel {
+        max-height: 300px;
+    }
+
+    .hero-image {
+        min-height: 200px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .top-bar,
+    .main-header,
+    .btn-primary-gradient,
+    .contact-bar,
+    .main-footer,
+    .cart-summary-footer {
+        display: none !important;
+    }
+
+    .hero-section,
+    .products-section,
+    .campaigns-section,
+    .blog-section {
+        page-break-inside: avoid;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+}
+
