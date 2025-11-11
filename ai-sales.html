@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Destekli Online Satış - Magdeburger Sigorta</title>
+    <link rel="stylesheet" href="css/magdeburger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="#" class="top-link"><i class="fas fa-phone"></i> 0850 808 26 24</a>
+                        <a href="#" class="top-link"><i class="fas fa-envelope"></i> info@magdeburger.com.tr</a>
+                    </div>
+                    <div class="top-bar-right">
+                        <a href="#" class="top-link"><i class="fas fa-user"></i> Giriş Yap</a>
+                        <a href="#" class="top-link"><i class="fas fa-file-alt"></i> Poliçe Sorgula</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container-fluid">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="https://www.magdeburger.com.tr/storage/settings/May2022/y774RzQynUVi2VOAcVFF.png" alt="Magdeburger Sigorta" height="50">
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Ana Sayfa</a></li>
+                            <li class="has-dropdown">
+                                <a href="#">Ürünler <i class="fas fa-chevron-down"></i></a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-column">
+                                            <h4>Sağlık Sigortaları</h4>
+                                            <ul>
+                                                <li><a href="#">Özel Sağlık Sigortası</a></li>
+                                                <li><a href="#">Tamamlayıcı Sağlık Sigortası</a></li>
+                                                <li><a href="#">Yabancı Sağlık Sigortası</a></li>
+                                                <li><a href="#">Seyahat Sağlık Sigortası</a></li>
+                                                <li><a href="#">Ferdi Kaza Sigortası</a></li>
+                                                <li><a href="#">Kritik Hastalıklar Sigortası</a></li>
+                                                <li><a href="#">Özel Ameliyat Sigortası</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Oto Sigortaları</h4>
+                                            <ul>
+                                                <li><a href="#">Kasko</a></li>
+                                                <li><a href="#">Trafik Sigortası</a></li>
+                                                <li><a href="#">IMM</a></li>
+                                                <li><a href="#">Yeşil Kart</a></li>
+                                            </ul>
+                                            <h4 style="margin-top: 20px;">Mühendislik</h4>
+                                            <ul>
+                                                <li><a href="#">İnşaat All Risks</a></li>
+                                                <li><a href="#">Makine Kırılması</a></li>
+                                                <li><a href="#">Montaj All Risks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Diğer Sigortalar</h4>
+                                            <ul>
+                                                <li><a href="#">Konut Sigortası</a></li>
+                                                <li><a href="#">İşyeri Sigortası</a></li>
+                                                <li><a href="#">DASK</a></li>
+                                                <li><a href="#">Sorumluluk Sigortaları</a></li>
+                                                <li><a href="#">Nakliyat Sigortası</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Yardım Merkezi</a></li>
+                            <li><a href="#">İletişim</a></li>
+                            <li><a href="#">Yatırımcı İlişkileri</a></li>
+                            <li><a href="#">Basında Biz</a></li>
+                            <li><a href="ai-sales.html" class="active">AI Satış Yönetimi</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="btn-primary-gradient">Teklif Al</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- POC Hero Section -->
+    <section class="poc-hero">
+        <div class="container-fluid">
+            <div class="poc-hero-content">
+                <div class="poc-badge">
+                    <i class="fas fa-robot"></i> AI Destekli Online Satış - Proof of Concept
+                </div>
+                <h1>Yapay Zeka ile Akıllı Sigorta Satışı</h1>
+                <p>Ürün dokümanları, AI soru-cevap, acente yönetimi ve çapraz satış özellikleriyle yeni nesil online satış deneyimi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main POC Content -->
+    <section class="poc-main">
+        <div class="container-fluid">
+            <div class="poc-grid">
+                <!-- Ürün Seçimi Kartları -->
+                <div class="poc-section">
+                    <h2 class="section-title-poc">
+                        <i class="fas fa-shield-alt"></i> Ürün Seçimi
+                    </h2>
+                    <div class="product-cards-grid">
+                        <!-- Kasko Kartı -->
+                        <div class="product-card-poc">
+                            <div class="product-card-header">
+                                <div class="product-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <div class="product-info">
+                                    <h3>KaskolaMAG Sigortası</h3>
+                                    <span class="product-subtitle">Yeni Nesil Kasko Sigortası</span>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <p>MAG Servislerde tamir imkânı sunan, fiyat avantajlı, yeni nesil kasko sigortası. Arıza durumunda çekme-kurtarma hizmeti ve yol kenarı yardımı ile her zaman yanınızdayız.</p>
+                            </div>
+
+                            <div class="product-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-percentage"></i>
+                                    <span>%30'a varan prim indirimi</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Hasarsızlık indirimi korunur</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-car-side"></i>
+                                    <span>İkame araç hizmeti</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>MAG Servis garantisi</span>
+                                </div>
+                            </div>
+
+                            <div class="product-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>3 Doküman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-check-circle" style="color: #10b981;"></i>
+                                    <span>AI Hazır</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-action-primary" onclick="startSalesFlow('kasko')">
+                                    <i class="fas fa-rocket"></i> Satış Başlat
+                                </button>
+                                <button class="btn-action-secondary" onclick="openAITest('kasko')">
+                                    <i class="fas fa-robot"></i> Yapay Zekaya Sor
+                                </button>
+                                <button class="btn-action-secondary" onclick="openDocuments('kasko')">
+                                    <i class="fas fa-folder-open"></i> Dokümanlar
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Konut Kartı -->
+                        <div class="product-card-poc">
+                            <div class="product-card-header">
+                                <div class="product-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="product-info">
+                                    <h3>Konut Sigortası</h3>
+                                    <span class="product-subtitle">Evinizi Koruyun</span>
+                                </div>
+                            </div>
+
+                            <div class="product-description">
+                                <p>Ev sahiplerinin ve kiracıların yaşayabilecekleri olası risklere karşı maddi güvence sağlar. Yangın, su baskını, hırsızlık ve deprem gibi riskleri kapsayan geniş teminat seçenekleri.</p>
+                            </div>
+
+                            <div class="product-highlights">
+                                <div class="highlight-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Yangın & Doğal Afet</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>Hırsızlık teminatı</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-water"></i>
+                                    <span>Su baskını & Cam kırılması</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-home"></i>
+                                    <span>Alternatif konut desteği</span>
+                                </div>
+                            </div>
+
+                            <div class="product-stats">
+                                <div class="stat-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>2 Doküman</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-check-circle" style="color: #10b981;"></i>
+                                    <span>AI Hazır</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-action-primary" onclick="startSalesFlow('konut')">
+                                    <i class="fas fa-rocket"></i> Satış Başlat
+                                </button>
+                                <button class="btn-action-secondary" onclick="openAITest('konut')">
+                                    <i class="fas fa-robot"></i> Yapay Zekaya Sor
+                                </button>
+                                <button class="btn-action-secondary" onclick="openDocuments('konut')">
+                                    <i class="fas fa-folder-open"></i> Dokümanlar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POC Özellikleri -->
+                <div class="poc-section">
+                    <h2 class="section-title-poc">
+                        <i class="fas fa-stars"></i> POC Özellikleri
+                    </h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>AI Soru-Cevap</h3>
+                            <p>Ürün dokümanlarından otomatik bilgi verme, kaynak gösterimi ve audit trail</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-success">SEDDK Uyumlu</span>
+                                <span class="tag tag-info">Source Citation</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h3>AI Yönetimli Satış</h3>
+                            <p>Adım adım form doldurma, doğrulama ve müşteri risk profili oluşturma</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-primary">5 Adım</span>
+                                <span class="tag tag-success">Otomatik</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Acente Ataması</h3>
+                            <p>SFS entegrasyonu, varsayılan acente veya alternatif seçim, komisyon yönetimi</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-warning">SFS API</span>
+                                <span class="tag tag-info">Komisyon</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Çapraz Satış</h3>
+                            <p>Risk profiline göre ek ürün önerisi, AI destekli öneri motoru</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-success">AI Powered</span>
+                                <span class="tag tag-primary">Artış</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3>Web POS Ödeme</h3>
+                            <p>Güvenli online ödeme, taksit seçenekleri, PCI-DSS uyumlu</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-success">Güvenli</span>
+                                <span class="tag tag-info">Taksit</span>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-check"></i>
+                            </div>
+                            <h3>KVKK/SEDDK Uyum</h3>
+                            <p>Aydınlatma metni, onay mekanizması, 10 yıl audit trail saklama</p>
+                            <div class="feature-tags">
+                                <span class="tag tag-danger">Zorunlu</span>
+                                <span class="tag tag-success">Tam Uyum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Test Modal -->
+    <div id="aiTestModal" class="modal-poc">
+        <div class="modal-content-large">
+            <div class="modal-header-poc">
+                <div class="modal-title-group">
+                    <h2 id="aiModalTitle">AI Test - Kasko</h2>
+                    <span class="status-badge status-online">
+                        <i class="fas fa-circle"></i> AI Online
+                    </span>
+                </div>
+                <button class="btn-close-modal" onclick="closeAITest()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body-split">
+                <!-- Sol Panel: Chat -->
+                <div class="chat-panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-comments"></i> Soru & Cevap</h3>
+                        <button class="btn-text" onclick="clearChat()">
+                            <i class="fas fa-trash"></i> Temizle
+                        </button>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-text">
+                                    Merhaba! Kasko sigortası hakkında sorularınızı cevaplayabilirim. Tüm cevaplarım ürün dokümanlarına dayanmaktadır.
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Az önce</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-questions">
+                        <div class="quick-question-label">Hızlı Sorular:</div>
+                        <button class="quick-question-btn" onclick="askQuestion('Bu ürün neleri kapsar?')">
+                            Bu ürün neleri kapsar?
+                        </button>
+                        <button class="quick-question-btn" onclick="askQuestion('Teminat limitleri nedir?')">
+                            Teminat limitleri nedir?
+                        </button>
+                        <button class="quick-question-btn" onclick="askQuestion('Muafiyetler neledir?')">
+                            Muafiyetler neledir?
+                        </button>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInput" placeholder="Sorunuzu yazın..." onkeypress="handleChatKeyPress(event)">
+                        <button class="btn-send" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sağ Panel: Audit Trail -->
+                <div class="audit-panel">
+                    <div class="panel-header">
+                        <h3><i class="fas fa-clipboard-list"></i> Audit Trail</h3>
+                        <button class="btn-text" onclick="exportAuditTrail()">
+                            <i class="fas fa-download"></i> Dışa Aktar
+                        </button>
+                    </div>
+                    <div class="audit-info-box">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <strong>SEDDK Uyum</strong>
+                            <p>Tüm soru-cevap kayıtları 10 yıl süreyle saklanır</p>
+                        </div>
+                    </div>
+                    <div class="audit-trail" id="auditTrail">
+                        <div class="audit-item">
+                            <div class="audit-header">
+                                <span class="audit-time">
+                                    <i class="fas fa-clock"></i> 11.11.2025 14:23
+                                </span>
+                            </div>
+                            <div class="audit-body">
+                                <div class="audit-question">
+                                    <strong>Soru:</strong> Bu ürün neleri kapsar?
+                                </div>
+                                <div class="audit-answer">
+                                    <strong>Cevap:</strong> Kasko sigortası aracınızın çarpma, çarpışma, yangın, hırsızlık...
+                                </div>
+                                <div class="audit-source">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <strong>Kaynak:</strong> Kasko Şartnamesi v2.1 - Madde 3.2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Doküman Yönetimi Modal -->
+    <div id="documentsModal" class="modal-poc">
+        <div class="modal-content-medium">
+            <div class="modal-header-poc">
+                <h2 id="docModalTitle">Doküman Yönetimi - Kasko</h2>
+                <button class="btn-close-modal" onclick="closeDocuments()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body-poc">
+                <!-- Doküman Listesi -->
+                <div class="documents-list">
+                    <h3><i class="fas fa-folder-open"></i> Yüklü Dokümanlar</h3>
+                    <div class="document-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="doc-info">
+                            <h4>Kasko Şartnamesi</h4>
+                            <div class="doc-meta">
+                                <span><i class="fas fa-calendar"></i> 15.10.2025</span>
+                                <span><i class="fas fa-hdd"></i> 2.4 MB</span>
+                                <span class="doc-version">v2.1</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <button class="btn-icon" title="Görüntüle"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon" title="İndir"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="document-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="doc-info">
+                            <h4>Kasko Broşürü</h4>
+                            <div class="doc-meta">
+                                <span><i class="fas fa-calendar"></i> 10.10.2025</span>
+                                <span><i class="fas fa-hdd"></i> 1.8 MB</span>
+                                <span class="doc-version">v1.5</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <button class="btn-icon" title="Görüntüle"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon" title="İndir"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="document-item">
+                        <div class="doc-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <div class="doc-info">
+                            <h4>Teknik Doküman</h4>
+                            <div class="doc-meta">
+                                <span><i class="fas fa-calendar"></i> 05.10.2025</span>
+                                <span><i class="fas fa-hdd"></i> 856 KB</span>
+                                <span class="doc-version">v1.0</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <button class="btn-icon" title="Görüntüle"><i class="fas fa-eye"></i></button>
+                            <button class="btn-icon" title="İndir"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <div class="footer-grid-large">
+                <!-- Column 1 -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="https://www.magdeburger.com.tr/storage/settings/May2022/y774RzQynUVi2VOAcVFF.png" alt="Magdeburger" height="40">
+                    </div>
+                    <div class="footer-contact-info">
+                        <h4>Bize Ulaşın</h4>
+                        <p class="footer-phone-big"><i class="fas fa-phone"></i> 0850 808 26 24</p>
+                        <p><i class="fas fa-envelope"></i> info@magdeburger.com.tr</p>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h4>POC MODÜLLERI</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-robot"></i> AI Soru-Cevap</a></li>
+                        <li><a href="#"><i class="fas fa-clipboard-list"></i> AI Yönetimli Satış</a></li>
+                        <li><a href="#"><i class="fas fa-user-tie"></i> Acente Ataması</a></li>
+                        <li><a href="#"><i class="fas fa-lightbulb"></i> Çapraz Satış</a></li>
+                        <li><a href="#"><i class="fas fa-credit-card"></i> Web POS Ödeme</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h4>DOKÜMANTASYON</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Talep Tanım Dokümanı</a></li>
+                        <li><a href="#">Teknik Dokümantasyon</a></li>
+                        <li><a href="#">API Referansı</a></li>
+                        <li><a href="#">Entegrasyon Kılavuzu</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Ana Siteye Dön</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h4>UYUM & GÜVENLİK</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">KVKK Aydınlatma Metni</a></li>
+                        <li><a href="#">SEDDK Uyum Politikası</a></li>
+                        <li><a href="#">Audit Trail Yönetimi</a></li>
+                        <li><a href="#">Veri Saklama Politikası</a></li>
+                        <li><a href="#">PCI-DSS Uyumlu Ödeme</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Magdeburger Sigorta A.Ş. - AI Destekli Online Satış POC</p>
+                    <p class="poc-version">POC Version 1.0 | Geliştirme Tarihi: Kasım 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ai-sales.js"></script>
+</body>
+</html>
