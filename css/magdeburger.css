@@ -218,11 +218,11 @@ body {
 .has-dropdown:hover .mega-menu {
     opacity: 1;
     visibility: visible;
-    max-height: 800px;
+    max-height: 500px;
 }
 
 .mega-menu-wrapper {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -239,7 +239,7 @@ body {
 .mega-menu-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 50px;
 }
 
 .mega-menu-column {
@@ -4459,12 +4459,12 @@ body.cart-visible .main-footer {
 
     /* Mega Menu - Single column for tablets */
     .mega-menu {
-        max-height: 1200px;
+        max-height: 800px;
         overflow-y: auto;
     }
 
     .has-dropdown:hover .mega-menu {
-        max-height: 1200px;
+        max-height: 800px;
     }
 
     .mega-menu-wrapper {
