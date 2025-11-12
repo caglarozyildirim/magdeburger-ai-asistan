@@ -4457,6 +4457,30 @@ body.cart-visible .main-footer {
         font-size: 14px;
     }
 
+    /* Mega Menu - Single column for tablets */
+    .mega-menu {
+        max-height: 1200px;
+        overflow-y: auto;
+    }
+
+    .has-dropdown:hover .mega-menu {
+        max-height: 1200px;
+    }
+
+    .mega-menu-wrapper {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .mega-menu-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .mega-menu-category-group {
+        margin-bottom: 20px;
+    }
+
     /* Hero Section */
     .hero-slide {
         flex-direction: column;
