@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Session başlat
     initSession();
+
+    // Mobil menü toggle
+    initMobileMenu();
 });
 
 // Session başlat
@@ -566,5 +569,51 @@ window.downloadDocument = downloadDocument;
 window.deleteDocument = deleteDocument;
 
 // Mega Menu - Static grid layout (no JavaScript needed)
+
+// Mobile Menu Toggle Function
+function initMobileMenu() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    if (mobileMenuToggle && mainNav) {
+        mobileMenuToggle.addEventListener('click', function() {
+            // Toggle menu open/close
+            mobileMenuToggle.classList.toggle('active');
+            mainNav.classList.toggle('mobile-open');
+
+            // Prevent body scroll when menu is open
+            if (mainNav.classList.contains('mobile-open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!mainNav.contains(event.target) &&
+                !mobileMenuToggle.contains(event.target) &&
+                mainNav.classList.contains('mobile-open')) {
+                mobileMenuToggle.classList.remove('active');
+                mainNav.classList.remove('mobile-open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when window is resized to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                mobileMenuToggle.classList.remove('active');
+                mainNav.classList.remove('mobile-open');
+                document.body.style.overflow = '';
+            }
+        });
+
+        console.log('📱 Mobil menü yüklendi');
+    }
+}
+
+// Export mobile menu function
+window.initMobileMenu = initMobileMenu;
 
 console.log('✅ main.js yüklendi');
