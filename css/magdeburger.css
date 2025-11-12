@@ -223,7 +223,8 @@ body {
 
 .mega-menu-wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 0;
     padding: 0 40px;
 }
 
